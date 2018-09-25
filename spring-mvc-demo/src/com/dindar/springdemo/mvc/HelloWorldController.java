@@ -23,8 +23,8 @@ public class HelloWorldController {
 	//public String makeUppercase(HttpServletRequest request, Model model) {
 	public String makeUppercase(@RequestParam("studentName")String name, Model model) {
 		
-		/*String name= request.getParameter("studentName");
-		name= "Yo " +  name.toUpperCase();*/
+		/*String name= request.getParameter("studentName");*/
+		name= "Yo " +  name.toUpperCase();
 		
 		model.addAttribute("message",name);
 		return "helloworld";
